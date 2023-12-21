@@ -689,10 +689,8 @@ input, select, textarea {
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
-		height: 3.5em;
-		line-height: 3.5em;
 		outline: 0;
-		padding: 0 2em 0 2em;
+		padding: 0.5em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
@@ -892,7 +890,7 @@ input, select, textarea {
 	}
 
 	#congratulations{
-		height: 100vh;
+		height: 100vh !important;
 		background-color: var(--mainColor);
 	}
 
@@ -2664,9 +2662,9 @@ input, select, textarea {
 
 .section1 .login-form {
 	position:absolute;
-    top:20%;
-    right:0;
-    left:0;
+	top: 20%;
+	right: 0;
+	left: 0;
 }
 
 .text-error {
