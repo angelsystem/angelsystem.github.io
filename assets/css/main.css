@@ -867,6 +867,7 @@ input, select, textarea {
 		color: inherit;
 		border-radius: 0.5em;
 		outline: none;
+		background-color: white;
 	}
 
 		input[type="text"]:focus,
@@ -950,7 +951,7 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
-	
+
 
 /* Custom effects for images */
 
@@ -2178,17 +2179,6 @@ input, select, textarea {
 
 		}
 
-	body {
-		padding-top: 3em;
-	}
-
-		@media screen and (max-width: 736px) {
-
-			body {
-				padding-top: 2.5em;
-			}
-
-		}
 
 /* Main */
 
@@ -2449,6 +2439,41 @@ input, select, textarea {
 
 		}
 
+/* login */
+.section1 {
+	background-color: #fed6fb;
+}
+
+.congratulation-text {
+  font-family: 'Playball';
+  font-size: 100px;
+  color:#98018c;
+  margin-top:10%;
+  display: none;
+}
+
+.section1 button.pink {
+	background-color: #ff88f5;
+  font-family: 'Playball';
+  font-size: 30px;
+}
+
+.section1 .login-form {
+	position:absolute;
+    top:30%;
+    right:0;
+    left:0;
+}
+
+.text-error {
+  color:red;
+}
+
+#textMachine {
+  height:130px;
+  display: none;
+  overflow: hidden;
+}
 
 /* Intro */
 
