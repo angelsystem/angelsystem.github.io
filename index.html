@@ -16,7 +16,18 @@
       <div class="login-form">
         <div class="row">
           <div class="columns medium-12 text-center">
-            <h2>Enter Code</h2>
+            <h2>Hola Milagros :)</h2>
+            <h2>Ingresa el código</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns medium-12 text-center">
+            <p>El código es:</p>
+            <ul>
+              <li>- último número del día de tu cumpleaños</li>
+              <li>- última letra de tu segundo apellido</li>
+            </ul>
           </div>
         </div>
         <div class="row">
@@ -32,22 +43,22 @@
             <div id="textMachine">
               <div>
                 <span class=" text-error">
-                  Wrong Code<img src="assets/css/images/fail1.png" alt="" class="fix-size">
+                  Fallaste pipipi<img src="assets/css/images/fail1.png" alt="" class="fix-size">
                 </span>
               </div>
               <div>
                 <span class=" text-error">
-                  Wrong Code<img src="assets/css/images/fail2.png" alt="" class="fix-size">
+                  Fallaste pipipi<img src="assets/css/images/fail2.png" alt="" class="fix-size">
                 </span>
               </div>
               <div>
                 <span class=" text-error">
-                  Wrong Code<img src="assets/css/images/fail3.png" alt="" class="fix-size">
+                  Fallaste pipipi<img src="assets/css/images/fail3.png" alt="" class="fix-size">
                 </span>
               </div>
               <div>
                 <span class="success">
-                  Success !!<img src="assets/css/images/success.png" alt="" class="fix-size">
+                  Bien Mily!!<img src="assets/css/images/success.png" alt="" class="fix-size">
                 </span>
               </div>
             </div>
@@ -56,7 +67,7 @@
         <div class="row">
           <div class="columns medium-12 text-center">
             <button id="unlock" class="round pink">
-              Unlock
+              Desbloquear
             </button>
           </div>
         </div>
@@ -64,8 +75,24 @@
     </div>
 
     <div class="success-area" style="display: none;">
-      <section id="demo" class="main style1 dark fullscreen">
-        <div class="content">scroll down</div>
+      <section id="congratulations" class="main style1 dark fullscreen">
+        <section class="content">
+          <h2 class="name">Gabriela Tovias,</h2>
+          <div id="textOne">Para iniciar dale play a la música que siento que es muy especial...</div>
+          <!-- <div id="textTwo">In that time, we have...</div>
+          <div id="textThree">Been on the phone for over 42 hours,</div>
+          <div id="textFour">Sent eachother 1958 text messages,</div>
+          <div id="textFive">And given eachother countless kisses,</div>
+          <div id="textSix">I loved every single one.</div>
+          <h2 id="textSeven">Te amo, Diego Gallardo <3</h2> -->
+
+        </section>
+        <section>
+          <p style="font-size: small;"><br>Dame play, soy una música especial :)</p>
+          <audio controls loop autoplay id="song">
+            <source src="sound/song.mp3" type="audio/mpeg">
+          </audio>
+        </section>
       </section>
       <!-- Intro -->
       <section id="intro" class="main style1 dark fullscreen">
@@ -81,13 +108,6 @@
             Since I'm bad at making physical gifts, I cheated and used a computer :3 <br>
             I spent a lot of time on this and I hope you like it. Love you!! 😊
           </p>
-
-          <section>
-            <p style="font-size: small;"><br>Jay Chou</p>
-            <audio controls loop autoplay id="song">
-              <source src="sound/song.mp3" type="audio/mpeg">
-            </audio>
-          </section>
 
           <footer>
             <a href="#beach" class="button style2 down"></a>
@@ -147,14 +167,14 @@
       <section id="outro" class="main style1 dark fullscreen">
         <div class="content">
           <header>
-            <h1>You made it to the end!</h1>
+            <h1>¡Llegaste hasta el final!</h1>
           </header>
 
-          <p> Did you like it?<br><br>
-            Thank you for all the sweet memories, including many that aren't even on here. <br>
-            Thank you for loving me and spoiling me all the time. <br>
-            Thank you for being the sunshine which brightens up my boring life. <br>
-            Shine on, 丰丰💕
+          <p> ¿Te gustó? <br><br>
+            Lo hice con mucho cariño y queria decirte que<br>
+            No olvides que aquí tienes a<br>
+            alguien que le importas, que te quiere <br>
+            y que piensa que eres lo mejor💕
           </p>
         </div>
       </section>
@@ -172,7 +192,7 @@
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/particles.js"></script>
     <script>
-      $('.section1, #demo').css({
+      $('.section1').css({
       	width: $(window).width(),
       	height: $(window).height()
       })
@@ -197,7 +217,7 @@
           		});
 
 
-          		if(code == '81')
+          		if(code == '7N' || code == '7n')
           		{
           			// success
           			var machine = $('#textMachine').slotMachine({

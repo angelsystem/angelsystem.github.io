@@ -7,6 +7,27 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+	--typeWriterSpeed: 4s;
+	--mainColor: #c21e56;
+
+	--textOneSteps: ;
+	--textTwoSteps: ;
+	--textThreeSteps: ;
+	--textFourSteps: ;
+	--textFiveSteps: ;
+	--textSixSteps: ;
+	--textSevenSteps: ;
+
+	--textOneDelay: 2s;
+	--textTwoDelay: 9s;
+	--textThreeDelay: 16s;
+	--textFourDelay: 23s;
+	--textFiveDelay: 30s;
+	--textSixDelay: 37s;
+	--textSevenDelay: 44s;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -870,6 +891,188 @@ input, select, textarea {
 		background-color: white;
 	}
 
+	#congratulations{
+		height: 100vh;
+		background-color: var(--mainColor);
+	}
+
+	h2.name,
+#textOne,
+#textTwo,
+#textThree,
+#textFour,
+#textFive,
+#textSix,
+#textSeven {
+	font-size: 16px;
+	color: white;
+	position: relative;
+	text-align: left;
+	width: max-content;
+	padding: 2.5px 0 2.5px 0;
+}
+
+#textOne::before,
+#textTwo::before,
+#textThree::before,
+#textFour::before,
+#textFive::before,
+#textSix::before,
+#textSeven::before,
+#textOne::after,
+#textTwo::after,
+#textThree::after,
+#textFour::after,
+#textFive::after,
+#textSix::after,
+#textSeven::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+}
+
+#textOne::before {
+	background: var(--mainColor);
+	animation: typewriter var(--typeWriterSpeed) var(--textOneDelay) steps(var(--textOneSteps))
+		forwards;
+}
+
+#textOne::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) var(--textOneDelay) steps(var(--textOneSteps))
+			forwards,
+		blink 750ms steps(var(--textOneSteps)) 9;
+}
+
+#textTwo::before {
+	background: var(--mainColor);
+	animation: typewriter var(--typeWriterSpeed) var(--textTwoDelay) steps(var(--textTwoSteps))
+		forwards;
+}
+
+#textTwo::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) var(--textTwoDelay) steps(var(--textTwoSteps))
+			forwards,
+		blink 750ms steps(var(--textTwoSteps)) 7s 9;
+}
+
+#textThree::before {
+	background: var(--mainColor);
+	animation: typewriter var(--typeWriterSpeed) var(--textThreeDelay) steps(var(--textThreeSteps)) forwards;
+}
+
+#textThree::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) var(--textThreeDelay) steps(var(--textThreeSteps)) forwards,
+		blink 750ms steps(var(--textThreeSteps)) 14s 9;
+}
+
+#textFour::before {
+	background: var(--mainColor);
+	animation: typewriter var(--typeWriterSpeed) var(--textFourDelay) steps(var(--textFourSteps)) forwards;
+}
+
+#textFour::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) var(--textFourDelay) steps(var(--textFourSteps)) forwards,
+		blink 750ms steps(var(--textFourSteps)) 21s 9;
+}
+
+#textFive::before {
+	background: var(--mainColor);
+	animation: typewriter var(--typeWriterSpeed) var(--textFiveDelay) steps(var(--textFiveSteps)) forwards;
+}
+
+#textFive::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) var(--textFiveDelay) steps(var(--textFiveSteps)) forwards,
+		blink 750ms steps(var(--textFiveSteps)) 28s 9;
+}
+
+#textSix::before {
+	background: var(--mainColor);
+	animation: typewriter var(--typeWriterSpeed) var(--textSixDelay) steps(var(--textSixSteps)) forwards;
+}
+
+#textSix::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) var(--textSixDelay) steps(var(--textSixSteps)) forwards,
+		blink 750ms steps(var(--textSixSteps)) 35s 9;
+}
+
+#textSeven::before {
+	background: var(--mainColor);
+	animation: typewriter var(--typeWriterSpeed) var(--textSevenDelay) steps(var(--textSevenSteps)) forwards;
+}
+
+#textSeven::after {
+	width: 0.1em;
+	background: transparent;
+	animation: typewriter var(--typeWriterSpeed) var(--textSevenDelay) steps(var(--textSevenSteps)) forwards,
+		blink 750ms steps(var(--textSevenSteps)) 42s infinite;
+}
+
+@keyframes typewriter {
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes blink {
+	to {
+		background: white;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	h2.name,
+	#textOne,
+	#textTwo,
+	#textThree,
+	#textFour,
+	#textFive,
+	#textSix,
+	#textSeven,
+	#textSeven {
+		font-size: 22px;
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	h2.name,
+	#textOne,
+	#textTwo,
+	#textThree,
+	#textFour,
+	#textFive,
+	#textSix,
+	#textSeven,
+	#textSeven {
+		font-size: 26px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	h2.name,
+	#textOne,
+	#textTwo,
+	#textThree,
+	#textFour,
+	#textFive,
+	#textSix,
+	#textSeven,
+	#textSeven {
+		font-size: 30px;
+	}
+}
+
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
@@ -879,6 +1082,7 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			border-color: #9ac8e9;
+			font-size: 1.3rem;
 		}
 
 	input[type="text"],
@@ -2460,7 +2664,7 @@ input, select, textarea {
 
 .section1 .login-form {
 	position:absolute;
-    top:30%;
+    top:20%;
     right:0;
     left:0;
 }
