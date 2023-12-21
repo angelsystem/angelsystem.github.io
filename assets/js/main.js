@@ -225,14 +225,14 @@ root.style.setProperty('--textOneSteps', textOne);
 const textTwo = document.getElementById('textTwo').innerText.length;
 root.style.setProperty('--textTwoSteps', textTwo);
 
-// const textThree = document.getElementById('textThree').innerText.length;
-// root.style.setProperty('--textThreeSteps', textThree);
+const textThree = document.getElementById('textThree').innerText.length;
+root.style.setProperty('--textThreeSteps', textThree);
 
-// const textFour = document.getElementById('textFour').innerText.length;
-// root.style.setProperty('--textFourSteps', textFour);
+const textFour = document.getElementById('textFour').innerText.length;
+root.style.setProperty('--textFourSteps', textFour);
 
-// const textFive = document.getElementById('textFive').innerText.length;
-// root.style.setProperty('--textFiveSteps', textFive);
+const textFive = document.getElementById('textFive').innerText.length;
+root.style.setProperty('--textFiveSteps', textFive);
 
 // const textSix = document.getElementById('textSix').innerText.length;
 // root.style.setProperty('--textSixSteps', textSix);
